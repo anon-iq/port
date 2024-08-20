@@ -40,16 +40,18 @@
 .fline{
   display: flex;
   align-items: center;
-  justify-content: right;
+ 
 }
 .fline2{
   position: absolute;
+  justify-self:flex-end ;
   max-width: 50%;
   padding-bottom: 6vh;
   padding-top: 6vh;
   color: rgb(115, 0, 255);
   background-color: rgba(240, 248, 255, 0.295);
   border-radius: 10px;
+   
  
 }
 .fline2 h1{
