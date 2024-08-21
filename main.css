@@ -7,21 +7,12 @@
   display: grid;
   background-color: blueviolet;
   margin-top: 3em;
+  margin-bottom: 1em;
   height:auto;
  width: 100%;
  grid-column-gap: 0;
- 
-  
   grid-template-columns: repeat(auto-fit , minmax(275px ,1fr));
   grid-template-rows:  auto;
-  
-  
-
-  grid-auto-columns: minmax(1fr,4fr)
-  
-
-   
-    
 
 }
 .items{
@@ -31,6 +22,7 @@
    
 }
 #it1{
+  background-image:url(monitor.jpg) ;
   margin-bottom: 0;
   grid-column-start: 1;
   grid-column-end: 5;
@@ -44,7 +36,7 @@
 }
 .fline2{
   position: absolute;
-  justify-self:flex-end ;
+ 
   max-width: 50%;
   padding-bottom: 6vh;
   padding-top: 6vh;
@@ -70,19 +62,24 @@
   grid-column-end: 5;
   grid-row-start: 3;
   grid-row-end:4 ;
-  background-color: rgb(210, 183, 183);
+  background-color: rgb(173, 173, 173);
   
 }
 .imgit2{
   display: flex;
   flex-wrap: wrap;
-}
-.foot{
-  background-color: blue;
-  display: flex;
-  justify-content:center;
+  justify-content: space-around;
   align-items: center;
 }
+.imgit2 img{
+  background-color: black;
+  border-radius: 10px;
+  height: 190px;
+  width: 190px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
 @media (max-width : 600px) {
   #it1{
     grid-column-start: 1;
@@ -97,5 +94,17 @@
     padding: 0;
   }
   
+}
+.footer{
+  display: block;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+.foot{
+  background-color: blue;
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
 }
 
